@@ -22,10 +22,10 @@ const mongoConnect = callback => {
 
 const getDb = () => {
   if (_db) {
-    return _db
+    return _db;
   }
-  throw 'No Database found!'
-}
+  throw 'No Database found!';
+};
 
 exports.mongoConnect = mongoConnect;
 exports.getDb = getDb;
